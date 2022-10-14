@@ -1,0 +1,16 @@
+def myFunc(e): #определяется функция
+    return e['year'] #возвращается значение года
+cars = [ 
+{'car':'Volvo', 'year': 2015}, 
+{'car': 'Toyota', 'year': 2020}, 
+{'car': 'BMW', 'year': 2019}, 
+{'car': 'VW', 'year': 2021},
+{'car': "Hyundai", 'year': 2021} 
+] 
+
+cars.sort(key=myFunc) #определяем ключ функции как myfunc
+print(cars)
+
+result:
+
+[{'car': 'Volvo', 'year': 2015}, {'car': 'BMW', 'year': 2019}, {'car': 'Toyota', 'year': 2020}, {'car': 'VW', 'year': 2021}, {'car': 'Hyundai', 'year': 2021}]
